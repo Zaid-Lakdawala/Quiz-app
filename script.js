@@ -1,26 +1,28 @@
 home()
+
 function home(){
-scoreEl = document.getElementById('score')
-scoreEl.innerHTML = ''
-var main = document.getElementById('main')
-main.replaceChildren()
-document.getElementById('message').innerHTML= ''
-document.getElementById('time').innerHTML = ''
-var h1 = document.createElement('h1')
-h1.textContent = 'HTML Quiz Challenge'
-h1.classList = 'text-primary'
-main.appendChild(h1)
+    scoreEl = document.getElementById('score')
+    scoreEl.innerHTML = ''
+    var main = document.getElementById('main')
+    main.replaceChildren()
+    document.getElementById('message').innerHTML= ''
+    document.getElementById('time').innerHTML = ''
+    var h1 = document.createElement('h1')
+    h1.textContent = 'HTML Quiz Challenge'
+    h1.classList = 'text-primary'
+    main.appendChild(h1)
 
-var h5 = document.createElement('h5')
-h5.innerHTML = 'Try to answer the following questions'
-main.appendChild(h5)
+    var h5 = document.createElement('h5')
+    h5.innerHTML = 'Try to answer the following questions'
+    main.appendChild(h5)
 
-var btn = document.createElement('button')
-btn.classList = 'btn btn-primary mt-4'
-btn.innerHTML = 'start'
-main.appendChild(btn)
+    var btn = document.createElement('button')
+    btn.classList = 'btn btn-primary mt-4'
+    btn.innerHTML = 'start'
+    main.appendChild(btn)
 
-btn.addEventListener('click',startquiz)}
+    btn.addEventListener('click',startquiz)
+}
 
 function message(){
     seconds = seconds - 10
